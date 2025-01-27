@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9CAFB7"
+    tools:context=".MainActivity5">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="31dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="131dp"
+            android:layout_height="128dp"
+            android:translationX="110dp"
+            android:translationY="50dp"
+            app:srcCompat="@drawable/drop" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter date"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:translationX="27dp"
+            android:translationY="220dp" />
+
+        <EditText
+            android:id="@+id/intake"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter water intake in litres"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:translationX="27dp"
+            android:translationY="280dp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4C6973"
+            android:text="Add entry"
+            android:translationX="60dp"
+            android:translationY="340dp" />
+
+        <Button
+            android:id="@+id/read"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4C6973"
+            android:text="Read all entries"
+            android:translationX="60dp"
+            android:translationY="460dp" />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4C6973"
+            android:text="Delete entry"
+            android:translationX="60dp"
+            android:translationY="400dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="106dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#4C6973"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
