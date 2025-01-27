@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9CAFB7"
+    tools:context=".MainActivity6">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="31dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="280dp"
+            android:layout_height="43dp"
+            android:translationX="35dp"
+            android:translationY="200dp" />
+
+        <TextView
+            android:id="@+id/countdown"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:translationX="95dp"
+            android:translationY="250dp" />
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="113dp"
+            android:layout_height="58dp"
+            android:backgroundTint="#4C6973"
+            android:text="Start"
+            android:translationX="115dp"
+            android:translationY="350dp"
+            android:onClick="start_timer"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="106dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#4C6973"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
